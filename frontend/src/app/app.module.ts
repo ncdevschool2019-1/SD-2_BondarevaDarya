@@ -13,11 +13,13 @@ import {BillingDetailsViewComponent} from "./modules/layout/components/billing-d
 import {NotFoundComponent} from "./modules/layout/components/404/not-found.component";
 import {LayoutModule} from "./modules/layout/layout.module";
 import {HomeComponent} from "./modules/layout/components/home/home.component";
+import {SignInComponent} from "./modules/layout/components/sign in/sign-in.component";
 
 const appRoutes: Routes = [
   {path: "", component: HomeComponent},
   {path: "home", component: HomeComponent},
   {path: "billing-details/:id", component: BillingDetailsViewComponent},
+  {path: "sign-in", component: SignInComponent},
   {path: "**", component: NotFoundComponent}
 ];
 

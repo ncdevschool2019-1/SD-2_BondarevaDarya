@@ -5,12 +5,14 @@ import {HomeComponent} from "./components/home/home.component";
 import {BillingAccountModule} from "../billing-account/billing-account.module";
 import {HeaderModule} from "../header/header.module";
 import {RouterModule} from "@angular/router";
+import {SignInComponent} from "./components/sign in/sign-in.component";
 
 @NgModule({
   declarations: [
     HomeComponent,
     NotFoundComponent,
-    BillingDetailsViewComponent
+    BillingDetailsViewComponent,
+    SignInComponent
   ],
   imports: [
     BillingAccountModule,
