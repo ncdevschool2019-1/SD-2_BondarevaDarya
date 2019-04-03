@@ -1,0 +1,21 @@
+.footer-background {
+  width: 100vw;
+  height: 40px;
+  margin-top: -40px;
+  background-color: #000000;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  opacity: 1;
+  height: 40px;
+  margin-top: -40px;
+  color: white;
+  z-index: 3;
+}

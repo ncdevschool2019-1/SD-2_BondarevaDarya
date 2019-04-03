@@ -6,13 +6,15 @@ import {BillingAccountModule} from "../billing-account/billing-account.module";
 import {HeaderModule} from "../header/header.module";
 import {RouterModule} from "@angular/router";
 import {SignInComponent} from "./components/sign in/sign-in.component";
+import {FooterComponent} from "./components/footer/footer.component";
 
 @NgModule({
   declarations: [
     HomeComponent,
     NotFoundComponent,
     BillingDetailsViewComponent,
-    SignInComponent
+    SignInComponent,
+    FooterComponent
   ],
   imports: [
     BillingAccountModule,
