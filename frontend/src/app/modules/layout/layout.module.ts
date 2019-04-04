@@ -7,6 +7,7 @@ import {HeaderModule} from "../header/header.module";
 import {RouterModule} from "@angular/router";
 import {SignInComponent} from "./components/sign in/sign-in.component";
 import {FooterComponent} from "./components/footer/footer.component";
+import {HeaderComponent} from "./components/header/header.component";
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import {FooterComponent} from "./components/footer/footer.component";
     NotFoundComponent,
     BillingDetailsViewComponent,
     SignInComponent,
+    HeaderComponent,
     FooterComponent
   ],
   imports: [
