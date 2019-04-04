@@ -38,6 +38,12 @@
   align-self: flex-end;
 }
 
+.yellow-btn:hover {
+  background-color: #fdffd4;
+  border: 1px solid #ffc312;
+  color: #ffc312;
+}
+
 .sign-in-text {
   color: #ffffff;
   font-size: 20px;
