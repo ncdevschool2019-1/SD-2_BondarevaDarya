@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import {TasksService} from "../../../../services/tasks.service";
 
 @Component({
   selector: "app-sign-in-component",
@@ -7,9 +8,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class SignInComponent implements OnInit {
 
-  constructor( ) {}
+  constructor(private taskService: TasksService) {
+
+  }
 
   ngOnInit() {
-
+    this.taskService.getTasks().
+    subscribe((task) => {console.log(task.name)});
   }
 }

@@ -5,9 +5,10 @@ import {HomeComponent} from "./components/home/home.component";
 import {BillingAccountModule} from "../billing-account/billing-account.module";
 import {HeaderModule} from "../header/header.module";
 import {RouterModule} from "@angular/router";
-import {SignInComponent} from "./components/sign in/sign-in.component";
+import {SignInComponent} from "./components/sign-in/sign-in.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {HeaderComponent} from "./components/header/header.component";
+import {TasksService} from "../../services/tasks.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import {HeaderComponent} from "./components/header/header.component";
     HeaderModule,
     RouterModule
   ],
-  providers: [],
+  providers: [TasksService],
   exports: [HomeComponent, NotFoundComponent, BillingDetailsViewComponent]
 })
 export class LayoutModule {}
