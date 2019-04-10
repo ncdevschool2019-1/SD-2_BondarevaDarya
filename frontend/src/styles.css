@@ -1,2 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+.outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("app/assets/images/stars_background.jpg") repeat-y center center fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

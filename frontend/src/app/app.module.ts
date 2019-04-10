@@ -14,12 +14,15 @@ import {NotFoundComponent} from "./modules/layout/components/404/not-found.compo
 import {LayoutModule} from "./modules/layout/layout.module";
 import {HomeComponent} from "./modules/layout/components/home/home.component";
 import {SignInComponent} from "./modules/layout/components/sign-in/sign-in.component";
+import {HeaderModule} from "./modules/header/header.module";
+import {TasksComponent} from "./modules/layout/containers/tasks-list/tasks-list.component";
 
 const appRoutes: Routes = [
   {path: "", component: HomeComponent},
   {path: "home", component: HomeComponent},
   {path: "billing-details/:id", component: BillingDetailsViewComponent},
   {path: "sign-in", component: SignInComponent},
+  {path: "tasks", component: TasksComponent},
   {path: "**", component: NotFoundComponent}
 ];
 
@@ -36,7 +39,8 @@ const appRoutes: Routes = [
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

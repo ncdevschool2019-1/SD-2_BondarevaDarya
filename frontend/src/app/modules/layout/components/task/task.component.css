@@ -1,0 +1,39 @@
+.task {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1D2951;
+  box-shadow: 0 0 5px 1px #1D297C;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  margin: 5px 0;
+}
+
+.task_upper-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task__description {
+  display: flex;
+  align-self: center;
+}
+
+.task__additional-info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.task_bottom-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.task__created-date {
+  margin-right: 10px;
+}

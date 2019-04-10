@@ -9,6 +9,8 @@ import {SignInComponent} from "./components/sign-in/sign-in.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {TasksService} from "../../services/tasks.service";
+import {TaskComponent} from "./components/task/task.component";
+import {TasksComponent} from "./containers/tasks-list/tasks-list.component";
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {TasksService} from "../../services/tasks.service";
     BillingDetailsViewComponent,
     SignInComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TaskComponent,
+    TasksComponent
   ],
   imports: [
     BillingAccountModule,
@@ -25,6 +29,6 @@ import {TasksService} from "../../services/tasks.service";
     RouterModule
   ],
   providers: [TasksService],
-  exports: [HomeComponent, NotFoundComponent, BillingDetailsViewComponent]
+  exports: [HomeComponent, NotFoundComponent, BillingDetailsViewComponent, HeaderComponent, FooterComponent]
 })
 export class LayoutModule {}
