@@ -1,0 +1,19 @@
+.create-task-form {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1D2951;
+  box-shadow: 0 0 5px 1px #1D297C;
+  color: white;
+  padding: 10px 20px;
+}
+
+.create-task-form__upper-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-task-form__central-row {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -16,6 +16,7 @@ import {HomeComponent} from "./modules/layout/components/home/home.component";
 import {SignInComponent} from "./modules/layout/components/sign-in/sign-in.component";
 import {HeaderModule} from "./modules/header/header.module";
 import {TasksComponent} from "./modules/layout/containers/tasks-list/tasks-list.component";
+import {NewTaskFormComponent} from "./modules/layout/components/new-task-form/new-task-form.component";
 
 const appRoutes: Routes = [
   {path: "", component: HomeComponent},
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   {path: "billing-details/:id", component: BillingDetailsViewComponent},
   {path: "sign-in", component: SignInComponent},
   {path: "tasks", component: TasksComponent},
+  {path: "create-task", component: NewTaskFormComponent},
   {path: "**", component: NotFoundComponent}
 ];
 

@@ -11,6 +11,8 @@ import {HeaderComponent} from "./components/header/header.component";
 import {TasksService} from "../../services/tasks.service";
 import {TaskComponent} from "./components/task/task.component";
 import {TasksComponent} from "./containers/tasks-list/tasks-list.component";
+import {NewTaskFormComponent} from "./components/new-task-form/new-task-form.component";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import {TasksComponent} from "./containers/tasks-list/tasks-list.component";
     HeaderComponent,
     FooterComponent,
     TaskComponent,
-    TasksComponent
+    TasksComponent,
+    NewTaskFormComponent
   ],
   imports: [
     BillingAccountModule,
     HeaderModule,
-    RouterModule
+    RouterModule,
+    CommonModule
   ],
   providers: [TasksService],
   exports: [HomeComponent, NotFoundComponent, BillingDetailsViewComponent, HeaderComponent, FooterComponent]

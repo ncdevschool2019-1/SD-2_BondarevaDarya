@@ -1,0 +1,50 @@
+<form class="create-task-form">
+  <div class="create-task-form__upper-row">
+    <div class="form-group create-task-form__project-input">
+      <label for="projectIdInput">Project</label>
+      <input type="number" class="form-control" id="projectIdInput" placeholder="65746">
+    </div>
+    <div class="form-group">
+      <label for="priorityInput">Priority</label>
+      <select class="form-control" id="priorityInput">
+        <option *ngFor="let el of priorities">{{el}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="statusInput">Status</label>
+      <select class="form-control" id="statusInput">
+        <option *ngFor="let el of statuses">{{el}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="descriptionTextarea">Description</label>
+    <textarea class="form-control" id="descriptionTextarea" rows="3"></textarea>
+  </div>
+
+  <div class="create-task-form__central-row">
+    <div class="form-group">
+      <label for="estimationInput">Estimation</label>
+      <input type="text" class="form-control" id="estimationInput">
+    </div>
+
+    <div class="form-group">
+      <label for="deadlineInput">Deadline</label>
+      <input type="date" class="form-control" id="deadlineInput">
+    </div>
+  </div>
+
+  <div class="create-task-form__central-row">
+    <div class="form-group">
+      <label for="reporterInput">Reporter</label>
+      <input type="number" class="form-control" id="reporterInput">
+    </div>
+
+    <div class="form-group">
+      <label for="assigneeInput">Assignee</label>
+      <input type="number" class="form-control" id="assigneeInput">
+    </div>
+  </div>
+
+</form>
